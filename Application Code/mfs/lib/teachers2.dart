@@ -3,14 +3,14 @@ import 'conts.dart';
 import 'reviewpage.dart';
 import 'dart:io';
 
-class teachers extends StatefulWidget {
-  static String id = 'teachers';
+class teachers2 extends StatefulWidget {
+  static String id = 'teachers2';
 
   @override
-  _teachersState createState() => _teachersState();
+  _teachers2State createState() => _teachers2State();
 }
 
-class _teachersState extends State<teachers> {
+class _teachers2State extends State<teachers2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,18 +50,15 @@ class _teachersState extends State<teachers> {
                         ),
                       ),
                       onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
+                        Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => reviewPage(
-                                teacherName: kteacher1,
-                                teachersub: kteachersub1),
-                          ),
-                        );
+                                teacherName: kteacher1_1,
+                                teachersub: kteachersub1)));
                       },
                     ),
                   ),
                   Text(
-                    kteacher1,
+                    kteacher1_1,
                     style: TextStyle(color: Colors.white),
                   )
                 ],
@@ -80,14 +77,13 @@ class _teachersState extends State<teachers> {
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => reviewPage(
-                                teacherName: kteacher2,
+                                teacherName: kteacher2_1,
                                 teachersub: kteachersub2)));
-//                Navigator.pushNamed(context,reviewPage());
                       },
                     ),
                   ),
                   Text(
-                    kteacher2,
+                    kteacher2_1,
                     style: TextStyle(color: Colors.white),
                   )
                 ],
@@ -106,14 +102,13 @@ class _teachersState extends State<teachers> {
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => reviewPage(
-                                teacherName: kteacher3,
+                                teacherName: kteacher3_1,
                                 teachersub: kteachersub3)));
-//                Navigator.pushNamed(context,reviewPage());
                       },
                     ),
                   ),
                   Text(
-                    kteacher3,
+                    kteacher3_1,
                     style: TextStyle(color: Colors.white),
                   )
                 ],
@@ -132,14 +127,13 @@ class _teachersState extends State<teachers> {
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => reviewPage(
-                                teacherName: kteacher4,
+                                teacherName: kteacher4_1,
                                 teachersub: kteachersub4)));
-//                Navigator.pushNamed(context,reviewPage());
                       },
                     ),
                   ),
                   Text(
-                    kteacher4,
+                    kteacher4_1,
                     style: TextStyle(color: Colors.white),
                   )
                 ],
@@ -158,14 +152,13 @@ class _teachersState extends State<teachers> {
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => reviewPage(
-                                teacherName: kteacher5,
+                                teacherName: kteacher5_1,
                                 teachersub: kteachersub5)));
-//                Navigator.pushNamed(context,reviewPage());
                       },
                     ),
                   ),
                   Text(
-                    kteacher5,
+                    kteacher5_1,
                     style: TextStyle(color: Colors.white),
                   )
                 ],
@@ -184,14 +177,14 @@ class _teachersState extends State<teachers> {
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => reviewPage(
-                                teacherName: kteacher6,
+                                teacherName: kteacher6_1,
                                 teachersub: kteachersub6)));
 //                Navigator.pushNamed(context,reviewPage());
                       },
                     ),
                   ),
                   Text(
-                    kteacher6,
+                    kteacher6_1,
                     style: TextStyle(color: Colors.white),
                   )
                 ],
@@ -210,14 +203,14 @@ class _teachersState extends State<teachers> {
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => reviewPage(
-                                teacherName: kteacher7,
+                                teacherName: kteacher7_1,
                                 teachersub: kteachersub4)));
 //                Navigator.pushNamed(context,reviewPage());
                       },
                     ),
                   ),
                   Text(
-                    kteacher7,
+                    kteacher7_1,
                     style: TextStyle(color: Colors.white),
                   )
                 ],

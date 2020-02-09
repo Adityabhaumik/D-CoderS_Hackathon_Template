@@ -74,6 +74,7 @@ class _reviewPageState extends State<reviewPage> {
                 )
               ],
             ),
+
             Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -113,6 +114,9 @@ class _reviewPageState extends State<reviewPage> {
                 ],
               ),
             ),
+
+            //++++++++++++++++++++++++++++++++++++++++++++++++++++\\\\\\\\\\\\\\\\\\\\\\
+
             Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -140,10 +144,15 @@ class _reviewPageState extends State<reviewPage> {
                         });
                       },
                     ),
+                  ),
+                  Text(
+                    '$kperfromance2',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
                   )
                 ],
               ),
             ),
+
             Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -171,10 +180,15 @@ class _reviewPageState extends State<reviewPage> {
                         });
                       },
                     ),
+                  ),
+                  Text(
+                    '$kperfromance3',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
                   )
                 ],
               ),
             ),
+
             Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -202,10 +216,15 @@ class _reviewPageState extends State<reviewPage> {
                         });
                       },
                     ),
+                  ),
+                  Text(
+                    '$kperfromance4',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
                   )
                 ],
               ),
             ),
+
             Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -233,16 +252,21 @@ class _reviewPageState extends State<reviewPage> {
                         });
                       },
                     ),
+                  ),
+                  Text(
+                    '$kperfromance5',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
                   )
                 ],
               ),
             ),
+
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextField(
                   onChanged: (value) {},
                   decoration: kInputDecoration.copyWith(
-                      hintText: 'Write other openions',
+                      hintText: 'WRITE YOUR OPINIONS',
                       fillColor: Colors.white)),
             ),
             RoundedButton(

@@ -58,5 +58,12 @@ var kteacher5 = 'Sarthak Sen';
 var kteachersub5 = 'Algo';
 var kteacher6 = 'Stev Jobs';
 var kteachersub6 = 'Buissness';
-
+var kteacher1_1 = 'Jhon Snow';
+var kteacher2_1 = 'Shakti Man';
+var kteacher3_1 = 'Mamta DIDI';
+var kteacher4_1 = 'Pappu';
+var kteacher5_1 = 'Mota Bhai';
+var kteacher6_1 = 'Shaheen Bagh';
+var kteacher7_1 = 'Patrakar Popat lal';
+var kteacher7 = 'Anurag Mishra';
 //var kweight = 50;

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'SignIn.dart';
 import 'teachers.dart';
 import 'reviewpage.dart';
+import 'teachers2.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,11 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: teachers.id,
+      initialRoute: Signin.id,
       routes: {
         Signin.id: (context) => Signin(),
         teachers.id: (context) => teachers(),
         reviewPage.id: (context) => reviewPage(),
+        teachers2.id: (context) => teachers2(),
       },
     );
   }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mfs/teachers.dart';
 import 'conts.dart';
 import 'Roundedbutton.dart';
+import 'teachers2.dart';
 
 class Signin extends StatefulWidget {
   static String id = 'Signin';
@@ -11,6 +13,7 @@ class Signin extends StatefulWidget {
 
 class _SigninState extends State<Signin> {
   String email;
+  int a;
   var temp;
   @override
   Widget build(BuildContext context) {
@@ -68,7 +71,21 @@ class _SigninState extends State<Signin> {
                   colour: Colors.deepOrangeAccent,
                   onpressed: () {
                     temp = RegExp(r'(\d+)').firstMatch(email).group(0);
-                    print(temp);
+
+                    a = check(temp);
+                    if (a == 1) {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => teachers(),
+                        ),
+                      );
+                    } else if (a == 2) {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => teachers2(),
+                        ),
+                      );
+                    }
                   },
                 )
               ],
@@ -77,5 +94,22 @@ class _SigninState extends State<Signin> {
         ),
       ),
     );
+  }
+}
+
+int check(var a) {
+  if (a == '201900056' ||
+      a == '201900057' ||
+      a == '201900058' ||
+      a == '201900059' ||
+      a == '201900060') {
+    return 1;
+  } else if (a == '201900050' ||
+      a == '201900051' ||
+      a == '201900052' ||
+      a == '201900053' ||
+      a == '201900054' ||
+      a == '201900055') {
+    return 2;
   }
 }
