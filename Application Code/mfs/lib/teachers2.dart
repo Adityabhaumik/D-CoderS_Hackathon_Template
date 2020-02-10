@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'conts.dart';
 import 'reviewpage.dart';
 import 'dart:io';
+import 'SignIn.dart';
+import 'main.dart';
 
 class teachers2 extends StatefulWidget {
   static String id = 'teachers2';
@@ -201,10 +203,8 @@ class _teachers2State extends State<teachers2> {
                         ),
                       ),
                       onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => reviewPage(
-                                teacherName: kteacher7_1,
-                                teachersub: kteachersub4)));
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Signin()));
 //                Navigator.pushNamed(context,reviewPage());
                       },
                     ),

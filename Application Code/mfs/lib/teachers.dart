@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mfs/SignIn.dart';
 import 'conts.dart';
 import 'reviewpage.dart';
 import 'dart:io';
@@ -24,7 +25,8 @@ class _teachersState extends State<teachers> {
             padding: const EdgeInsets.only(right: 15.0),
             child: GestureDetector(
               onTap: () {
-                exit(0);
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => Signin()));
               },
               child: Icon(Icons.power_settings_new),
             ),

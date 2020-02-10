@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "778931025652",
+    "firebase_url": "https://feedback-b4718.firebaseio.com",
+    "project_id": "feedback-b4718",
+    "storage_bucket": "feedback-b4718.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778931025652:android:0174231c5ad1a79c2a50a1",
+        "android_client_info": {
+          "package_name": "com.exampleAdityaBhaumik.mfs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778931025652-b0liqvklccol1vp1h46ptbv0i8u3c9uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD43pXfxqhTpQjB5tM5xTPmziF8fqqzrQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778931025652-b0liqvklccol1vp1h46ptbv0i8u3c9uu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

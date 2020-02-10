@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'conts.dart';
 import 'roundedbutton.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class reviewPage extends StatefulWidget {
   static String id = 'reviewPage';
@@ -13,7 +14,9 @@ class reviewPage extends StatefulWidget {
 }
 
 class _reviewPageState extends State<reviewPage> {
+  final _firestore = Firestore.instance;
   String teacherName;
+  String text;
   String teachersub;
   _reviewPageState({this.teacherName, this.teachersub});
   @override
@@ -264,7 +267,9 @@ class _reviewPageState extends State<reviewPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextField(
-                  onChanged: (value) {},
+                  onChanged: (value) {
+                    text = value;
+                  },
                   decoration: kInputDecoration.copyWith(
                       hintText: 'WRITE YOUR OPINIONS',
                       fillColor: Colors.white)),
@@ -272,7 +277,19 @@ class _reviewPageState extends State<reviewPage> {
             RoundedButton(
               colour: Colors.deepOrangeAccent,
               title: 'SUBMIT',
-              onpressed: () {},
+              onpressed: () {
+                _firestore.collection('feedbacks').add({
+                  'TeacherName': teacherName,
+                  'TeacherSub': teachersub,
+                  'q1': kperfromance1,
+                  'q2': kperfromance2,
+                  'q3': kperfromance3,
+                  'q4': kperfromance4,
+                  'q5': kperfromance5,
+                  'openion': text,
+                });
+                // Navigator.pop(context);
+              },
             )
           ],
         ),
