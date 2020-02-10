@@ -25,10 +25,8 @@ This gives the user an opportunity to provide feedback that is directly correlat
    Packages
      1.FIREBASE CORE(firebase_core 0.4.3+3)
          Acts as an dependency for firebase auth and firebase database.
-     2.FIREBASE AUTH(firebase_auth 0.15.4)
-          to use for authentication of user.
-     3.FIREBASE DATABASE(firebase_databse 3.1.1)
-          It gives us the classes to access the firebase database.
+     2.FIREBASE FireStore
+     
    
 ### Team Members
 ----------------------------------
